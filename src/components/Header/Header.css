@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  border: 15px solid #4d654d;
+  background-color: #eaddc6;
+}
+
+h1 {
+  color: #a44741;
+  background-color: inherit;
+  font-size: 4vw;
+}
+
+img {
+  background-color: inherit;
+  margin-left: 60px;
+}

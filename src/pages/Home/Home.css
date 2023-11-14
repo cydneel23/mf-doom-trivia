@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+  height: 50vh;
+  gap: 100px;
+}
+
+input::placeholder {
+  color: #b9b1a9;
+}
+.name-input {
+  width: 30vw;
+}
+.select-diff {
+  width: 30vw;
+}
+
+span {
+  color: #b9b1a9;
+  margin-top: 150px;
+  text-decoration: underline;
+  font-size: 1vw;
+}
