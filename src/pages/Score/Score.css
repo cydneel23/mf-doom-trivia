@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-display {
+  background-color: #a44741;
+  text-align: center;
+  color: #000;
+  font-size: 4vw;
+}
+
+.score-display {
+  background-color: #eaddc6;
+  color: #a44741;
+  text-align: center;
+  font-size: 3vw;
+}

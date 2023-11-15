@@ -1,0 +1,53 @@
+.container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #fff; */
+  height: 50vh;
+}
+/* Button 54 --> https://getcssscan.com/css-buttons-examples */
+.option-btn {
+  margin: 5px;
+  width: fit-content;
+  height: 8vh;
+  background-color: white;
+  font-size: 2vw;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.right-answer {
+  background-color: rgb(91, 179, 83);
+  color: white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+
+.wrong-answer {
+  background-color: rgb(179, 83, 83);
+  color: white;
+  box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
+}
+
+.question {
+  background-color: #eaddc6;
+  font-size: 2vw;
+  color: #a44741;
+}
+
+.submit-btn {
+  background-color: #eaddc6;
+  font-size: 2vw;
+  color: #a44741;
+}

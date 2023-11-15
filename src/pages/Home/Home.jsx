@@ -3,22 +3,16 @@ import "./Home.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Home = () => {
-  const [name, setName] = useState("");
-  const [difficulty, setDifficulty] = useState("");
+const Home = ({ name, setName, difficulty, setDifficulty }) => {
   const [error, setError] = useState(false);
-
   const navigate = useNavigate();
 
-  //make function called startquiz -- takes difficulty level and starts
-  //put trivia data into a folder called Questions -- and then put it into array
   const handleStart = () => {
-    if (!difficulty || !name) {
+    if (name && difficulty) {
+      navigate("./trivia");
+    } else {
       setError(true);
       return;
-    } else {
-      setError(false);
-      navigate("./trivia");
     }
   };
 
