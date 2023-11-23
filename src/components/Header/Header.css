@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 15vh;
-  border: 15px solid #4d654d;
+  border: 2rem solid #4d654d;
   background-color: #eaddc6;
 }
 
@@ -17,3 +17,4 @@ img {
   background-color: inherit;
   margin-left: 60px;
 }
+

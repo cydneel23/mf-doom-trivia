@@ -55,7 +55,7 @@ const Options = ({
         );
       })}
       <button className="submit-btn" onClick={nextQuestion}>
-        Next
+        NEXT
       </button>
     </div>
   );

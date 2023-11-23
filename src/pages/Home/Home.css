@@ -1,31 +1,34 @@
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-container {
   flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50vh;
-  gap: 100px;
+  gap: 2rem;
+  width: 30rem;
+  margin-left: 39%;
+  margin-top: 2%;
+  background-color: #eaddc6;
 }
 
-input::placeholder {
-  color: #b9b1a9;
-}
-.name-input {
-  width: 30vw;
-}
-.select-diff {
-  width: 30vw;
+.fields {
+  border: 0.5rem solid #4d654d;
+  width: 25rem;
+  height: 5vh;
+  background-color: #fff;
 }
 
-span {
-  color: #b9b1a9;
-  margin-top: 150px;
+.container-title {
+  background-color: inherit;
   text-decoration: underline;
-  font-size: 1vw;
+}
+
+.error-text {
+  background-color: #ff3131;
+  text-align: center;
+}
+
+.gifs {
+  display: flex;
+  justify-content: space-evenly;
 }

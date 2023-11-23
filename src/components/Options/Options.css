@@ -3,15 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #fff; */
   height: 50vh;
 }
-/* Button 54 --> https://getcssscan.com/css-buttons-examples */
+/* Button CSS Source Code --> https://getcssscan.com/css-buttons-examples */
 .option-btn {
-  margin: 5px;
+  margin: 1rem;
   width: fit-content;
   height: 8vh;
-  background-color: white;
+  background-color: #fff;
   font-size: 2vw;
   letter-spacing: 2px;
   text-decoration: none;
@@ -29,14 +28,14 @@
 }
 
 .right-answer {
-  background-color: rgb(91, 179, 83);
-  color: white;
+  background-color: rgb(59, 160, 50);
+  color: #fff;
   box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
 }
 
 .wrong-answer {
   background-color: rgb(179, 83, 83);
-  color: white;
+  color: #fff;
   box-shadow: 3px 3px 4px 1px rgb(78, 69, 78);
 }
 
@@ -44,10 +43,13 @@
   background-color: #eaddc6;
   font-size: 2vw;
   color: #a44741;
+  text-align: center;
 }
 
 .submit-btn {
-  background-color: #eaddc6;
+  background-color: #143a14;
   font-size: 2vw;
-  color: #a44741;
+  color: #fff;
+  width: fit-content;
+  height: 8vh;
 }

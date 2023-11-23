@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "/thegif.gif?url";
 
 const Home = ({ name, setName, difficulty, setDifficulty }) => {
   const [error, setError] = useState(false);
@@ -18,43 +19,38 @@ const Home = ({ name, setName, difficulty, setDifficulty }) => {
 
   return (
     <div>
+      {error && (
+        <h2 className="error-text">
+          You Must Fill All Fields Before Starting!
+        </h2>
+      )}
+      {/* <img className="doom-gif" src={logo} alt="loading..." /> */}
       <div className="main-container">
-        {/* conditional rendering below */}
-        {error && <span>Please Fill All Fields Before Starting</span>}
-        <div className="nes-field name-input">
-          <input
-            type="text"
-            id="dark_field"
-            className="nes-input is-dark"
-            placeholder="Enter Your Name"
-            value={name}
-            onInput={(e) => setName(e.target.value)}
-          ></input>
-        </div>
-        <div className="select-diff">
-          <div className="nes-select is-dark">
-            <select
-              required
-              id="dark_select"
-              value={difficulty}
-              onChange={(e) => setDifficulty(e.target.value)}
-            >
-              <option value="" disabled selected hidden>
-                Select Difficulty Level...
-              </option>
-              <option value="0">Easy</option>
-              <option value="1">Medium</option>
-              <option value="2">Hard</option>
-            </select>
-          </div>
-        </div>
-        <button
-          type="button"
-          className="nes-btn start-btn"
-          onClick={handleStart}
+        <h2 className="container-title">Fill All Fields</h2>
+        <input
+          type="text"
+          className="fields"
+          placeholder="Enter Your Name"
+          value={name}
+          onInput={(e) => setName(e.target.value)}
+        ></input>
+        <select
+          className="fields"
+          value={difficulty}
+          onChange={(e) => setDifficulty(e.target.value)}
         >
+          <option value="">Select Difficulty Level...</option>
+          <option value="0">Easy</option>
+          <option value="1">Medium</option>
+          <option value="2">Hard</option>
+        </select>
+        <button type="button" className="fields" onClick={handleStart}>
           START
         </button>
+      </div>
+      <div className="gifs">
+        <img className="doom-gif" src={logo} alt="loading..." />
+        <img className="doom-gif" src={logo} alt="loading..." />
       </div>
     </div>
   );
