@@ -1,3 +1,1 @@
-This is a React project that displays an MF DOOM based Trivia game. 
-Users can enter their name, select a difficulty level, and are presented with numerous questions corresponding to said difficulty level.
-Created with Vite.
+This React project is an MF DOOM based Trivia game. Users can select what difficulty level they're presented with and are presented with numerous questions corresponding to said level. Important React concepts used in this project include the useState hook and the useNavigate hook from React Router DOM. To run this project, clone the repo, and use the command "npm run dev".
