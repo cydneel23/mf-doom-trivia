@@ -24,9 +24,8 @@ const Trivia = ({ name, score, setScore, difficulty }) => {
   return (
     <div>
       <div className="user-stats">
-        <h1 className="curr-score">Current Score: {score}</h1>
-        {/* <h2 className="q-info">Question Number: {currQuestion + 1}</h2> */}
-        <h2 className="q-info">
+        <h1 className="curr-info">Current Score: {score}</h1>
+        <h2 className="curr-info">
           Questions Remaining: {questionArray.length - (currQuestion + 1)}
         </h2>
       </div>

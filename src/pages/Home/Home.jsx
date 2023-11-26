@@ -1,8 +1,7 @@
-import React from "react";
 import "./Home.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "/thegif.gif?url";
+import maingif from "/mf-gif.gif?url";
 
 const Home = ({ name, setName, difficulty, setDifficulty }) => {
   const [error, setError] = useState(false);
@@ -24,7 +23,6 @@ const Home = ({ name, setName, difficulty, setDifficulty }) => {
           You Must Fill All Fields Before Starting!
         </h2>
       )}
-      {/* <img className="doom-gif" src={logo} alt="loading..." /> */}
       <div className="main-container">
         <h2 className="container-title">Fill All Fields</h2>
         <input
@@ -49,8 +47,8 @@ const Home = ({ name, setName, difficulty, setDifficulty }) => {
         </button>
       </div>
       <div className="gifs">
-        <img className="doom-gif" src={logo} alt="loading..." />
-        <img className="doom-gif" src={logo} alt="loading..." />
+        <img className="doom-gif" src={maingif} alt="8 bit MF DOOM Gif" />
+        <img className="doom-gif" src={maingif} alt="8 bit MF DOOM Gif" />
       </div>
     </div>
   );

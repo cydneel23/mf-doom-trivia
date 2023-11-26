@@ -7,14 +7,13 @@
   background-color: #eaddc6;
 }
 
-h1 {
+.title {
   color: #a44741;
   background-color: inherit;
   font-size: 4vw;
 }
 
-img {
+.logo {
   background-color: inherit;
-  margin-left: 60px;
+  margin-left: 1rem;
 }
-
